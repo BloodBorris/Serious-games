@@ -20,6 +20,8 @@ public class HealthManager : MonoBehaviour
     float QTracker = 0;
     public Text question;
     bool hasSmoked = false;
+    public Image brain;
+    public List<Sprite> brainSprites = new List<Sprite>();
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,7 @@ public class HealthManager : MonoBehaviour
         question.text = "Do you want to vape";
         SmokeAmount = 0;
         Smokebar.fillAmount = SmokeAmount / 10;
+        
     }
 
     // Update is called once per frame
@@ -105,7 +108,7 @@ public class HealthManager : MonoBehaviour
             
             
         }
-
+        ImageUpdate();
     }
 
     public void No(float num)
@@ -165,6 +168,34 @@ public class HealthManager : MonoBehaviour
             Smokebar.fillAmount = SmokeAmount / 10;
            
         }
+        ImageUpdate();
+    }
+
+    private void ImageUpdate()
+    {
+        if(MhpAmount >= 8)
+        {
+            brain.sprite = brainSprites[0];
+
+        }
+        else if(MhpAmount < 8 && MhpAmount >= 6) 
+        {
+            brain.sprite = brainSprites[1];
+        }
+        else if (MhpAmount < 6 && MhpAmount >= 4)
+        {
+            brain.sprite = brainSprites[2];
+        }
+        else if (MhpAmount < 4 && MhpAmount >= 2)
+        {
+            brain.sprite = brainSprites[3];
+        }
+        else if (MhpAmount < 2 && MhpAmount >= 0)
+        {
+            brain.sprite = brainSprites[4];
+        }
+
+
 
     }
 }
