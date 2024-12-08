@@ -23,8 +23,12 @@ public class HealthManager : MonoBehaviour
     bool hasSmoked = false;
     public Image brain;
     public Image lungs;
+    public Image Smoke;
+    public Image Face;
     public List<Sprite> brainSprites = new List<Sprite>();
     public List<Sprite> lungSprites = new List<Sprite>();
+    public List<Sprite> SmokeSpites = new List<Sprite>();
+    public List<Sprite> FaceSprites = new List<Sprite>();
 
     // Start is called before the first frame update
     void Start()
@@ -105,7 +109,7 @@ public class HealthManager : MonoBehaviour
         {
             QTracker += 1;
 
-            question.text = "You want to play games with your friends but playing this long could effect your physical health";
+            question.text = "You want to play games with your friends but playing this long could effect your physical health do you play the game";
         }
         else if (QTracker == 11)
         {
@@ -117,12 +121,12 @@ public class HealthManager : MonoBehaviour
         {
             QTracker += 1;
             changeHealth("Social", num);
-            question.text = "";
+            question.text = "Your friend is thinking of vaping and wants you to join them but before you do they ask if it is true that vaping can cause inflamation to the heart causing damage to it";
         }
         else if (QTracker == 13)
         {
             QTracker += 1;
-            changeHealth("Vaping", num);
+            changeHealth("Vape", num);
             question.text = "You tell them yes and they look it up to find no proof of inflamation to the heart in vaping resulting in them vaping and convincing you to do the same";
         }
         else if (QTracker == 14)
@@ -314,7 +318,7 @@ public class HealthManager : MonoBehaviour
         {
             QTracker += 1;
 
-            question.text = "You want to play games with your friends but playing this long could effect your physical health";
+            question.text = "You want to play games with your friends but playing this long could effect your physical health do you play the game";
         }
         else if (QTracker == 11)
         {
@@ -471,7 +475,49 @@ public class HealthManager : MonoBehaviour
             lungs.sprite = lungSprites[4];
         }
 
+        if (SmokeAmount >= 8)
+        {
+            Smoke.sprite = SmokeSpites[0];
 
+        }
+        else if (SmokeAmount < 8 && SmokeAmount >= 6)
+        {
+            Smoke.sprite = SmokeSpites[1];
+        }
+        else if (SmokeAmount < 6 && SmokeAmount >= 4)
+        {
+            Smoke.sprite = SmokeSpites[2];
+        }
+        else if (SmokeAmount < 4 && SmokeAmount >= 2)
+        {
+            Smoke.sprite = SmokeSpites[3];
+        }
+        else if (SmokeAmount < 2 && SmokeAmount >= 0)
+        {
+            Smoke.sprite = SmokeSpites[4];
+        }
+
+        if (ShpAmount >= 8)
+        {
+            Face.sprite = FaceSprites[0];
+
+        }
+        else if (ShpAmount < 8 && ShpAmount >= 6)
+        {
+            Face.sprite = FaceSprites[1];
+        }
+        else if (ShpAmount < 6 && ShpAmount >= 4)
+        {
+            Face.sprite = FaceSprites[2];
+        }
+        else if (ShpAmount < 4 && ShpAmount >= 2)
+        {
+            Face.sprite = FaceSprites[3];
+        }
+        else if (ShpAmount < 2 && ShpAmount >= 0)
+        {
+            Face.sprite = FaceSprites[4];
+        }
 
     }
 

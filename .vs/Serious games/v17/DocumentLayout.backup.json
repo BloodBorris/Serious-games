@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Alex\\Serious games\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2AAA1368-D7F4-01AA-67E5-970B7452B767}|Assembly-CSharp.csproj|C:\\Users\\Alex\\Serious games\\assets\\scripts\\healthmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2AAA1368-D7F4-01AA-67E5-970B7452B767}|Assembly-CSharp.csproj|c:\\users\\alex\\serious games\\assets\\scripts\\healthmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AAA1368-D7F4-01AA-67E5-970B7452B767}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AAA1368-D7F4-01AA-67E5-970B7452B767}|Assembly-CSharp.csproj|c:\\users\\alex\\serious games\\assets\\scripts\\restart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2AAA1368-D7F4-01AA-67E5-970B7452B767}|Assembly-CSharp.csproj|C:\\Users\\Alex\\Serious games\\assets\\scripts\\restart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AAA1368-D7F4-01AA-67E5-970B7452B767}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\restart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,8 +30,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Restart.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T00:26:55.063Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T00:26:55.063Z"
             },
             {
               "$type": "Document",
@@ -41,7 +40,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\HealthManager.cs",
               "ToolTip": "C:\\Users\\Alex\\Serious games\\Assets\\Scripts\\HealthManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\HealthManager.cs",
-              "ViewState": "AgIAACwCAAAAAAAAAAAqwE4CAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAABgBAAAAAAAAAAAvwC4BAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T00:11:21.277Z",
               "EditorCaption": ""
